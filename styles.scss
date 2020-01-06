@@ -1,5 +1,27 @@
+// theme fonts for scss 
+$title-font: 'Overpass Mono', monospace;
+$main-font: 'Roboto', sans-serif;
+
+// theme colours for scss 
+$lightest-color: white;
+$light-color: #F2C1BD;
+$dark-color: #324759;
+$darkest-color: #0F1B26;
+
 body {
     padding-top: 50px;
+    background-color: $darkest-color;
+    color: $lightest-color;
+    font-family: $main-font;
+}
+
+h2 {
+    font-family: $title-font;
+}
+
+.navbar {
+    background-color: $darkest-color;
+    border-bottom: 2px solid $light-color;
 }
 
 #title-page {
@@ -9,5 +31,5 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-attachment: center center;
-
+    border-bottom: 2px solid $light-color;
 }
