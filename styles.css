@@ -24,7 +24,7 @@ h2 {
   padding-bottom: 0;
   padding-top: 60px;
   border-bottom: 2px solid #F2C1BD;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #title-page {
@@ -33,7 +33,7 @@ h2 {
 }
 
 #title-image {
-  height: 100vw;
+  height: 100vh;
   margin: 0;
   position: fixed;
   left: 50%;
