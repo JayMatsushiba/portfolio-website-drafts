@@ -1,18 +1,22 @@
-// theme fonts for scss 
+// theme fonts
 $title-font: 'Overpass Mono', monospace;
 $main-font: 'Roboto', sans-serif;
 
-// theme colours for scss 
+// theme colours
 $lightest-color: white;
 $light-color: #F2C1BD;
 $dark-color: #324759;
 $darkest-color: #0F1B26;
 
-body {
-    padding-top: 50px;
-    background-color: $darkest-color;
-    color: $lightest-color;
-    font-family: $main-font;
+
+html {
+    scroll-behavior: smooth;
+    body {
+        padding-top: 50px;
+        background-color: $darkest-color;
+        color: $lightest-color;
+        font-family: $main-font;
+    }
 }
 
 h2 {
@@ -20,16 +24,60 @@ h2 {
 }
 
 .navbar {
-    background-color: $darkest-color;
+	background-color:$darkest-color;
+    color:#fff;
     border-bottom: 2px solid $light-color;
 }
 
+.section {
+    background-color: $darkest-color;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 60px;
+    border-bottom: 2px solid $light-color;
+    height: 100vh;
+}
+
+// LANDING PAGE 
+
 #title-page {
     height: calc(100vh - 50px);
-    background-image: url("images/hg2018-3237.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-attachment: center center;
     border-bottom: 2px solid $light-color;
+}
+
+#title-image {
+    height: 100vw;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+// size of title image
+$main-title-height: 50px;
+$sub-title-height: 20px;
+
+#title #main-title {
+    position: fixed;
+    height: $main-title-height;
+    top: -moz-calc(50% - #{$main-title-height});
+    top: -webkit-calc(50% - #{$main-title-height});
+    top: -o-calc(50% - #{$main-title-height});
+    top: calc(50% - #{$main-title-height});
+    z-index: -1;
+}
+
+// spacing between titles
+$title-spacing: 10px;
+
+#title #sub-title {
+    position: fixed;
+    height: $sub-title-height;
+    top: -moz-calc(50% + #{$title-spacing});
+    top: -webkit-calc(50% + #{$title-spacing});
+    top: -o-calc(50% + #{$title-spacing});
+    top: calc(50% + #{$title-spacing});
+    z-index: -1;
 }

@@ -1,4 +1,7 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   padding-top: 50px;
   background-color: #0F1B26;
   color: white;
@@ -11,17 +14,52 @@ h2 {
 
 .navbar {
   background-color: #0F1B26;
+  color: #fff;
   border-bottom: 2px solid #F2C1BD;
+}
+
+.section {
+  background-color: #0F1B26;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 60px;
+  border-bottom: 2px solid #F2C1BD;
+  height: 100vh;
 }
 
 #title-page {
   height: calc(100vh - 50px);
-  background-image: url("images/hg2018-3237.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-attachment: center center;
   border-bottom: 2px solid #F2C1BD;
+}
+
+#title-image {
+  height: 100vw;
+  margin: 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+#title #main-title {
+  position: fixed;
+  height: 50px;
+  top: -moz-calc(50% - 50px);
+  top: -webkit-calc(50% - 50px);
+  top: -o-calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: -1;
+}
+
+#title #sub-title {
+  position: fixed;
+  height: 20px;
+  top: -moz-calc(50% + 10px);
+  top: -webkit-calc(50% + 10px);
+  top: -o-calc(50% + 10px);
+  top: calc(50% + 10px);
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
