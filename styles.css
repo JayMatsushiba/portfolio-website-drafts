@@ -1,5 +1,9 @@
+body {
+  padding-top: 50px;
+}
+
 #title-page {
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-image: url("images/hg2018-3237.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
