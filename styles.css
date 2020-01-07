@@ -22,7 +22,7 @@ h2 {
   background-color: #0F1B26;
   margin-bottom: 0;
   padding-bottom: 0;
-  padding-top: 60px;
+  padding-top: 80px;
   border-bottom: 2px solid #F2C1BD;
   min-height: 100vh;
 }
@@ -33,7 +33,9 @@ h2 {
 }
 
 #title-image {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  object-fit: cover;
   margin: 0;
   position: fixed;
   left: 50%;
@@ -44,11 +46,11 @@ h2 {
 
 #title #main-title {
   position: fixed;
-  height: 50px;
-  top: -moz-calc(50% - 50px);
-  top: -webkit-calc(50% - 50px);
-  top: -o-calc(50% - 50px);
-  top: calc(50% - 50px);
+  height: 65px;
+  top: -moz-calc(50% - 65px);
+  top: -webkit-calc(50% - 65px);
+  top: -o-calc(50% - 65px);
+  top: calc(50% - 65px);
   z-index: -1;
 }
 
@@ -60,6 +62,91 @@ h2 {
   top: -o-calc(50% + 10px);
   top: calc(50% + 10px);
   z-index: -1;
+}
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+  color: #0F1B26;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid white;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: " ";
+  background: #0F1B26;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid white;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contactTile {
+  --size-contact-tile: 5.5rem;
+  height: var(--size-contact-tile);
+  width: var(--size-contact-tile);
+}
+.contactTile i {
+  font-size: calc(var(--size-contact-tile)*0.7);
+  color: #324759;
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.contactTile p {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(var(--size-contact-tile)*0.2);
+  color: white;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 180%);
+}
+.contactTile .circle {
+  width: 100%;
+  height: 100%;
+  background: #F2C1BD;
+  border-radius: 50%;
+  z-index: 1;
+}
+.contactTile .circle:hover {
+  background: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

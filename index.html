@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/jaymatsushiba-light.svg" alt='JAY MATSUSHIBA' height="25" width="auto">
+                    <img src="images/jaymatsushiba-light.svg" alt='JAY MATSUSHIBA' height="20" width="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -49,25 +49,44 @@
         </div>
 
         <!-- Biography Page -->
-        <div id="bio-page" class="section">
-            <!-- Short biography -->
+        <div id="bio-page" class="section">            
             <div class="container">
-                <h2>ABOUT ME</h2>
-                <p>
-                Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. Recently, Jay completed the East Beach trail hike on Haida Gwaii, covering 90 km by foot solo over the course of five days. As a strong proponent of storytelling, Jay believes that Promenades sur l’eau will tell the story about our oceans and our connections to the natural world through fashion. 
-                </p>
-            </div>
-
-            <!-- Timeline of educational history -->
-            <div class="container">
-                <h3>Education</h3>
+                <div class="row">
+                    <img src="images/aboutme.svg" alt="about me">
+                </div>
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <h3>
+                            Biography
+                        </h3>
+                        <!-- Short biography -->
+                        <!-- need to rewrite for shorter and more relevant bio -->
+                        <p>
+                            Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. Recently, Jay completed the East Beach trail hike on Haida Gwaii, covering 90 km by foot solo over the course of five days. As a strong proponent of storytelling, Jay believes that Promenades sur l’eau will tell the story about our oceans and our connections to the natural world through fashion. 
+                        </p>
+                    </div>
+                    <div class="col-6 mx-auto">
+                        <h3>Education</h3>
+                        <!-- Timeline of educational history -->
+                        <ul class="timeline">
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+                                <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Project Page -->
         <div id="project-page" class='section'>
             <div class="container">
-                <h2>PROJECTS</h2>
+                <div class=row>
+                    <img src="images/featuredprojects.svg" alt="Featured Projects">
+                </div>
                 <div class="row">
                     <div class="col">
                         <div class="card" style="width: 18rem;">
@@ -107,7 +126,9 @@
         <!-- Expedition Page -->
         <div id="expedition-page" class='section'>
             <div class="container">
-                <h2>EXPEDITIONS</h2>
+                <div class="row">
+                    <img src="images/recentexpeditions.svg" alt="recent expeditions">
+                </div>
                 <div class="row">
                     <div class="col">
                         <div class="card" style="width: 18rem;">
@@ -148,7 +169,47 @@
         <!-- Contact Information Page -->
         <div id="contact-page" class='section'>
             <div class="container">
-                <h2>CONTACT ME</h2>
+                <div class="row">
+                    <img src="images/contactme.svg" alt="contact me">
+                </div>
+                <div id="contactTileHolder" class='row d-flex justify-content-center'>
+                    <!-- LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="linkedIn">
+                            <div class="circle">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/JayMatsushiba" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="github">
+                            <div class="circle">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    <!-- SFU Email link -->
+                    <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="email">
+                            <div class="circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>Email</p>
+                        </div>
+                    </a>
+                    <!-- Resume link -->
+                    <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="resume"> 
+                            <div class="circle">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <p>Resume</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
