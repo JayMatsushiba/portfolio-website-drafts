@@ -8,13 +8,13 @@ html body {
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
-  font-family: "Overpass Mono", monospace;
+.heading {
+  margin-bottom: 25px;
 }
 
 .navbar {
   background-color: #0F1B26;
-  color: #fff;
+  color: white;
   border-bottom: 2px solid #F2C1BD;
 }
 
@@ -112,6 +112,14 @@ li.timeline-item::before {
   height: 14px;
   z-index: 400;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #0F1B26;
+}
+
+.card-text {
+  color: #0F1B26;
 }
 
 .contactTile {

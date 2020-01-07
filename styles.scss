@@ -19,13 +19,13 @@ html {
     }
 }
 
-h2 {
-    font-family: $title-font;
+.heading {
+    margin-bottom: 25px;
 }
 
 .navbar {
 	background-color:$darkest-color;
-    color:#fff;
+    color: $lightest-color;
     border-bottom: 2px solid $light-color;
 }
 
@@ -134,6 +134,15 @@ li.timeline-item::before {
     height: 14px;
     z-index: 400;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+// Cards for projects and expeditions 
+.card-title {
+    color: $darkest-color;
+}
+
+.card-text {
+    color: $darkest-color;
 }
 
 // Contact tiles for contact page 
